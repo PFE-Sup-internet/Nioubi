@@ -47,7 +47,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: poppins, sans-serif;
+  font-family: 'Nunito', poppins, sans-serif;
   font-weight: 700;
   color: #38424d;
   margin: 0;
@@ -147,7 +147,7 @@ p {
   z-index: 6;
 }
 .navbar-brand img {
-  max-width: 150px;
+  max-width: 70px;
 }
 
 .navbar {
