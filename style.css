@@ -550,6 +550,15 @@ p {
   margin-bottom: 50px;
 }
 
+.screenshots-area h3 {
+  font-size: 35px;
+  color: #C01660;
+}
+
+.screenshots-area .section-title h5.title {
+  font-size: 28px;
+}
+
 .screenshots-area .shape2 {
   position: absolute;
   top: -50px;
@@ -581,24 +590,136 @@ p {
 }
 
 .screenshots-container {
-  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
   margin: auto;
 }
 
 .screenshots-container .screenshot {
-  display: flex;
-  justify-content: space-around;
+  width: 48%;
+  height: 210px;
+  box-shadow: 0 0 20px 5px #eeeeee;
+  border-radius: 30px;
+  text-align: center;
+  margin-top: 20px;
 }
 
-.screenshots-container .screenshot .screenshot-text {
-  width: 500px;
+.screenshots-container .screenshot strong {
+  font-size: 55px;
+}
+
+.screenshots-container .screenshot h4 {
+  color: #C01660;
+  font-size: 20px;
+}
+
+.screenshots-container .screenshot p {
+  color: #000;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: 'Nunito';
+}
+
+.screenshots-area .pricing-container {
   margin: auto;
-  margin-left: 0;
-  margin-right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 70px;
+  margin-bottom: 50px;
 }
 
-.screenshots-container .screenshot img {
+.screenshots-area .pricing-container h5 {
+  text-align: center;
+  font-size: 25px;
+}
+
+.screenshots-area .pricing-container .prices {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.screenshots-area .pricing-container .price {
+  border: 1px solid #C01660;
+  border-radius: 20px;
+  height: 150px;
   width: 200px;
+  margin: 20px;
+  position: relative;
+}
+
+.screenshots-area .pricing-container .price::before {
+  content: 'abonnement mensuel';
+  text-transform: uppercase;
+  position: absolute;
+  top: -20px;
+  font-size: 10px;
+  font-weight: 700;
+  width: 200px;
+  text-align: center;
+  color: #525a63;
+}
+
+.screenshots-area .pricing-container .price:nth-child(2)::before {
+  content: 'abonnement annuel';
+}
+
+.screenshots-area .pricing-container .price:nth-child(2)::after {
+  content: '-20%';
+  font-family: 'Nunito';
+  font-size: 18px;
+  color: #fff;
+  background-color: #C01660;
+  border-radius: 4px;
+  padding: 8px;
+  font-weight: 700;
+  position: absolute;
+  top: 40px;
+  right: -15px;
+}
+
+.screenshots-area .pricing-container .price h4 {
+  color: #C01660;
+  font-size: 20px;
+  width: 100%;
+  border-bottom: 1px solid #C01660;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.screenshots-area .pricing-container .price span {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 15px;
+  font-family: 'Nunito';
+  color: #000;
+  position: relative;
+}
+
+.screenshots-area .pricing-container .price strong {
+  font-size: 35px;
+  font-family: 'Nunito';
+  color: #000;
+}
+
+.screenshots-area .pricing-container .price:nth-child(2) span::before {
+  content: '59,98€';
+  text-decoration: line-through;
+  font-size: 12px;
+  position: absolute;
+  left: 30px;
+  top: -10px;
+}
+
+.screenshots-area .download-btns {
+  margin-top: 20px;
 }
 
 .screenshots-area .shape {
@@ -612,19 +733,7 @@ p {
 
   .screenshots-area .screenshots-container .screenshot {
     width: 100%;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
     margin-top: 20px;
-  }
-
-  .screenshots-area .screenshots-container .screenshot:nth-child(2n) {
-    flex-direction: column;
-  }
-
-  .screenshots-area .screenshots-container .screenshot .screenshot-text {
-    text-align: center;
-    width: 100%;
   }
 }
 
